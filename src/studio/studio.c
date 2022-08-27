@@ -1241,7 +1241,7 @@ void setStudioMode(Studio* studio, EditorMode mode)
     else if(mode == TIC_MUSIC_MODE)
     {
         Music* music = studio->banks.music[studio->bank.index.music];
-        music->tab = (music->tab + 1) % MUSIC_TAB_COUNT;
+        //music->tab = MUSIC_TRACKER_TAB;//(music->tab + 1) % MUSIC_TAB_COUNT;
     }
 #endif
 }
